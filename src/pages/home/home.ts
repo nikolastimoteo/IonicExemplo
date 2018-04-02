@@ -25,7 +25,8 @@ export class HomePage {
 
     this.weatherProvider.getWeather(this.location.city, this.location.state)
     .subscribe(weather =>{
-      console.log(weather);
+      //console.log(weather);
+      this.weather = weather.current_observation;
     });
   }
 }
